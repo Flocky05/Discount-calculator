@@ -13,11 +13,11 @@
         <div class="grid grid-cols-2 gap-4 w-1/2 mx-auto text-white mt-8">
             <div class="text-white bg-red-600 text-center p-8 font-semibold">
                 <h4>Your Price</h4>
-                <h4>Tk <span>100</span></h4>
+                <h4>Tk <span id="your-price">00</span></h4>
             </div>
             <div class="text-white bg-red-600 text-center p-8 font-semibold">
                 <h4>Discount Price</h4>
-                <h4>Tk <span>70</span></h4>
+                <h4>Tk <span id="discount">00</span></h4>
             </div>
         </div>
     </section>
@@ -25,15 +25,17 @@
         <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white mt-8 ">
             <div class="bg-red-600 p-10 ">
                 <h2>Input Your Product Price</h2>
-                <input class="block rounded-sm mt-2" type="text" placeholder="Please input Price">
-                <button class="text-rose-500  bg-white font-semibold rounded-sm mt-2 px-2 text-center">Submit</button>
+                <input id="price" class="block rounded-sm mt-2 text-black" type="number" placeholder="Please input Price">
+                <button id="btn-submit" class="text-rose-500  bg-white font-semibold rounded-sm mt-2 px-2 text-center">Submit</button>
             </div>
             <div class="bg-red-600 p-10 ">
                 <h2>Verification code-->input "DOM"</h2>
-                <input class="rounded-sm mt-2 w-9/12" type="text" placeholder="Please input Verification code">
+                <input id="verification-code" class="rounded-sm mt-2 w-9/12 text-black" type="text" placeholder="Please input Verification code">
                 
             </div>
         </div>
     </section>
+    <script src="js/price.js"></script>
+    <script src="js/discount.js"></script>
 </body>
 </html>
